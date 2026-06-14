@@ -64,7 +64,7 @@ Este proyecto implementa una estructura de grafo genérico en C++ con algoritmos
 Compila con C++17, incluyendo el directorio `includes`:
 
 ```bash
-g++ -std=c++17 -I. src/your_main.cpp -o main
+g++ -std=c++17 -I. main.cpp -o main
 ```
 
 Asegúrate de que tu archivo principal incluya `includes/Grafo.h`.
