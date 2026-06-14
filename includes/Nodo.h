@@ -5,19 +5,23 @@
 #include <list>
 using namespace std;
 
+template <class T>
 class Nodo;
+
+template <class T>
 struct Arista {
-Nodo* destino;
-int peso;
-Arista(Nodo* d, int p);
- };
+    Nodo<T>* destino;
+    int peso;
+    Arista(Nodo<T>* d, int p);
+};
+
 template <class T>
 class Nodo {
 private:
-T dato;
-list <Arista<T> > adyacentes;
-bool visitado;
-int nivel
+    T dato;
+    list<Arista<T>> adyacentes;
+    bool visitado;
+    int nivel;
 
 public:
   Nodo(T valor);

@@ -1,6 +1,10 @@
 #ifndef NODO_HXX
 #define NODO_HXX
 
+#include "Nodo.h"
+
+using namespace std;
+
 template <class T>
 Arista<T>::Arista(Nodo<T>* d, int p) {
 destino = d;

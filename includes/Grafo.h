@@ -2,6 +2,7 @@
 #define GRAFO_H
 
 #include <vector>
+#include "Nodo.h"
 
 using namespace std;
 
@@ -36,7 +37,13 @@ public:
     void recorridoPorNiveles(T inicio);
     int nivelDeNodo(T inicio, T objetivo);
     void recorridoPlano();
+    void dikjstra(T origen, T destino);
+    void floydWarshall();
+    void prim(T inicio);
+    void kruskal();
+    void euler( T inicio);
+    void hamilton(T inicio);
 };
 
-#include Grafo.hxx;
+#include "Grafo.hxx"
 #endif
